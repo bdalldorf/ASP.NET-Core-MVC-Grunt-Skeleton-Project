@@ -1,5 +1,4 @@
 ﻿/// <binding />
-'use strict';
 const sass = require('node-sass');
 /// <binding ProjectOpened='all' />
 module.exports = function (grunt) {
@@ -51,12 +50,15 @@ module.exports = function (grunt) {
             files: ["TypeScript/*.js", "Style/*.scss"],
             tasks: ["updateJS", "updateCSS"],
             views: {
-                files: ['Views/**/*.cshtml',
-                        "TypeScript/*.js",
-                        "Style/*.scss",
-                        'bin/**/*.dll'],
+                files: ["Views/**/*.cshtml",
+                        "wwwroot/**/*.css",
+                        "wwwroot/**/*.js",
+                        "bin/**/*.dll"],
                 options: {
-                    livereload: true,
+                    livereload: {
+                        host: 'localhost',
+                        port: 9000,
+                    }
                 }
             }
         }
