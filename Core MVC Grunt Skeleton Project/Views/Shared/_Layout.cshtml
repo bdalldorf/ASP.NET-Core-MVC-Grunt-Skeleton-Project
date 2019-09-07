@@ -53,6 +53,7 @@
     </footer>
 
     <environment include="Development">
+        <script src="http://localhost:44306/livereload.js"></script>
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
     </environment>
@@ -72,6 +73,7 @@
     </environment>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
+    <!-- Replace this with your localhost-->
     @RenderSection("Scripts", required: false)
 </body>
 </html>

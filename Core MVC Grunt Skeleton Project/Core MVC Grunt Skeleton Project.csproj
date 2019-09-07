@@ -4,12 +4,29 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <RootNamespace>Core_MVC_Grunt_Skeleton_Project</RootNamespace>
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="TypeScript\Food.ts" />
+    <None Remove="TypeScript\Tastes.ts" />
+  </ItemGroup>
 
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <TypeScriptCompile Include="TypeScript\Food.ts" />
+    <TypeScriptCompile Include="TypeScript\Tastes.ts" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="wwwroot\lib\typescript\" />
   </ItemGroup>
 
 </Project>
