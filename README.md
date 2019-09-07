@@ -1,4 +1,4 @@
-# ASP.NET-Core-MVC-Grunt-Skeleton-Project
+# ASP.NET Core MVC Grunt Skeleton Project
 
 ## Project
 
